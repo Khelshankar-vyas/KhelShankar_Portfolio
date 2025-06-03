@@ -42,7 +42,7 @@ A modern, responsive portfolio template built with Next.js 15, TypeScript, Tailw
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/vinodjangid07/next-portfolio-template.git
+git clone https://github.com/Khelshankar-vyas/KhelShankar_Portfolio.git
 ```
 
 2. Navigate to the project:
@@ -123,4 +123,4 @@ If you like this portfolio template, please give it a star ⭐️ to show your s
 ## 📧 Contact
 
 For questions, feedback, or support:
-- Email: [infovinodjangid@gmail.com](mailto:infovinodjangid@gmail.com)
+- Email: [khelshankarvyas007@gmail.com](mailto:khelshankarvyas007@gmail.com)

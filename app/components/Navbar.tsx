@@ -49,25 +49,49 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className={`fixed w-full z-50 transition-all duration-500 ${
-          scrolled
-            ? "py-4 bg-white/80 dark:bg-black/80 backdrop-blur-md shadow-lg"
-            : "py-6 bg-transparent"
-        }`}
+        className={`fixed w-full z-50 transition-all duration-500 shadow-lg backdrop-blur-md
+          ${scrolled ? 'py-3 bg-white/90 dark:bg-black/90 border-b border-purple-500/10' : 'py-6 bg-transparent'}
+        `}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="relative group">
+            <Link href="/" className="relative group flex items-center gap-3">
+              <img
+                src="/Images/nav-avatar.png"
+                alt="KV Avatar"
+                className="w-9 h-9 rounded-full border-2 border-purple-600 shadow"
+              />
               <motion.span
                 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-500"
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.08, rotate: 3 }}
                 transition={{ duration: 0.2 }}
               >
-                AM
+                KV
               </motion.span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-500/50 group-hover:w-full transition-all duration-300" />
             </Link>
+
+            {/* Nav Links - Desktop */}
+            <div className="hidden md:flex items-center gap-8">
+              {navLinks.map((link, idx) => (
+                <motion.div
+                  key={link.label}
+                  whileHover={{ y: -4, scale: 1.08, color: '#7c3aed' }}
+                  transition={{ type: 'spring', stiffness: 300 }}
+                >
+                  <Link
+                    href={link.href}
+                    className="relative px-3 py-2 text-lg font-medium text-gray-700 dark:text-gray-200 transition-colors duration-200 group"
+                  >
+                    <span className="group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-200">
+                      {link.label}
+                    </span>
+                    <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-gradient-to-r from-purple-600 to-indigo-600 group-hover:w-full transition-all duration-300" />
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
 
             {/* Controls */}
             <div className="flex items-center gap-4">
@@ -236,7 +260,7 @@ export default function Navbar() {
                 <div className="p-6 border-t border-purple-500/10 dark:border-purple-500/5">
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-500 dark:text-gray-400">
-                      © 2024 Arthur Morgan
+                      © 2025 Khel Shankar Vyas
                     </span>
                     <motion.button
                       whileHover={{ scale: 1.1 }}

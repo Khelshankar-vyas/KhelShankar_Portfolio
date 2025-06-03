@@ -26,73 +26,79 @@ export default function Hero() {
               transition={{ delay: 0.3 }}
               className="inline-block px-4 py-1.5 bg-purple-500/5 dark:bg-purple-500/10 text-purple-600 dark:text-purple-400 rounded-full text-sm font-medium mb-6"
             >
-              Full Stack Developer
+              Developer
             </motion.span>
 
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-800 dark:text-white leading-tight">
-                Hi, I&apos;m{" "}
+                Hey!, I&apos;m{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">
-                  Arthur Morgan
+                  Khel Shankar Vyas
                 </span>
               </h1>
             </div>
 
             {/* Description */}
             <p className="text-gray-600 dark:text-gray-300 text-lg lg:text-xl mt-8 mb-10 leading-relaxed max-w-2xl">
-              A passionate Full Stack Developer specializing in building
+              A passionate Developer specializing in building
               exceptional digital experiences that drive business growth and
               user engagement.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-xl overflow-hidden shadow-xl transition-all duration-300 hover:shadow-purple-500/25"
-              >
-                <span className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-                <span className="relative flex items-center justify-center gap-2">
-                  View Projects
-                  <svg
-                    className="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M13 7l5 5m0 0l-5 5m5-5H6"
-                    />
-                  </svg>
-                </span>
-              </motion.button>
+              {/* View Projects Button - scrolls to Projects section */}
+              <a href="#projects">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-xl overflow-hidden shadow-xl transition-all duration-300 hover:shadow-purple-500/25"
+                >
+                  <span className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" /> 
+                  <span className="relative flex items-center justify-center gap-2">
+                    View Projects
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
+                  </span>
+                </motion.button>
+              </a>
 
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="group px-8 py-4 bg-transparent border border-purple-500/20 dark:border-purple-500/30 hover:border-purple-500 text-purple-600 dark:text-purple-400 rounded-xl transition-all duration-300 hover:bg-purple-500/5 dark:hover:bg-purple-500/10"
-              >
-                <span className="flex items-center justify-center gap-2">
-                  Contact Me
-                  <svg
-                    className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 12h14m-7-7l7 7-7 7"
-                    />
-                  </svg>
-                </span>
-              </motion.button>
+              {/* Contact Me Button - scrolls to Footer section */}
+              <a href="#footer">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="group px-8 py-4 bg-transparent border border-purple-500/20 dark:border-purple-500/30 hover:border-purple-500 text-purple-600 dark:text-purple-400 rounded-xl transition-all duration-300 hover:bg-purple-500/5 dark:hover:bg-purple-500/10"
+                > 
+                  <span className="flex items-center justify-center gap-2">
+                    Contact Me
+                    <svg
+                      className="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M5 12h14m-7-7l7 7-7 7"
+                      />
+                    </svg>
+                  </span>
+                </motion.button>
+              </a>
             </div>
 
             {/* Social Proof */}
@@ -112,7 +118,7 @@ export default function Hero() {
               </div>
               <div className="text-gray-500 dark:text-gray-400">
                 <span className="text-purple-600 dark:text-purple-400 font-semibold">
-                  50+
+                  15+
                 </span>{" "}
                 Projects Completed
               </div>
