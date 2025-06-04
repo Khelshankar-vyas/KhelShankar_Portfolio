@@ -78,7 +78,7 @@ export default function Navbar() {
 
             {/* Nav Links - Desktop */}
             <div className="hidden md:flex items-center gap-8">
-              {navLinks.map((link, idx) => (
+              {navLinks.map((link) => (
                 <motion.div
                   key={link.label}
                   whileHover={{ y: -4, scale: 1.08, color: '#7c3aed' }}
