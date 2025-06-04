@@ -95,15 +95,15 @@ export default function About() {
 
             <div className="space-y-6 text-gray-600 dark:text-gray-300">
               <p>
-                Hey! I&apos;m Khel Shankar Vyas, a 23-year-old Developer currently advancing my knowledge with an MCA from Manipal University. My professional journey is centered at OM Server Pvt. Ltd., where I've grown from a Tech Intern (2021-2022) to a Developer (July 2023-Current). I'm passionate about building robust and user-friendly web experiences.
+                Hey! I&apos;m Khel Shankar Vyas, a 23-year-old Developer currently advancing my knowledge with an MCA from Manipal University. My professional journey is centered at OM Server Pvt. Ltd., where I&apos;ve grown from a Tech Intern (2021-2022) to a Developer (July 2023-Current). I&apos;m passionate about building robust and user-friendly web experiences.
               </p>
               
               <p>
-                My core expertise lies in front-end and back-end technologies including HTML, CSS, JavaScript, and Node.js, complemented by strong skills in SQL database design (MySQL) and optimization. I excel in collaborative environments, working alongside UX/UI designers, back-end developers, QA engineers, and product managers to deliver high-quality features and upgrades. From writing clean, scalable code and performing meticulous code reviews to implementing performance optimizations and conducting root cause analysis for complex bugs, I'm committed to best practices and system stability. Even as an intern, I managed multiple projects, developed responsive UIs, and contributed to significant initiatives like legacy application migration.
+                My core expertise lies in front-end and back-end technologies including HTML, CSS, JavaScript, and Node.js, complemented by strong skills in SQL database design (MySQL) and optimization. I excel in collaborative environments, working alongside UX/UI designers, back-end developers, QA engineers, and product managers to deliver high-quality features and upgrades. From writing clean, scalable code and performing meticulous code reviews to implementing performance optimizations and conducting root cause analysis for complex bugs, I&apos;m committed to best practices and system stability. Even as an intern, I managed multiple projects, developed responsive UIs, and contributed to significant initiatives like legacy application migration.
               </p>
 
               <p>
-                While I'm deeply rooted in development, my approach is also shaped by my interests as an artist, writer, storyteller, and aspiring entrepreneur, bringing a unique perspective to problem-solving and innovation.
+                While I&apos;m deeply rooted in development, my approach is also shaped by my interests as an artist, writer, storyteller, and aspiring entrepreneur, bringing a unique perspective to problem-solving and innovation.
               </p>
             </div>
 
