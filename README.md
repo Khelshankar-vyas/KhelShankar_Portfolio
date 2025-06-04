@@ -1,6 +1,6 @@
 # Nextjs Portfolio Template
 
-![Portfolio Preview](https://github.com/user-attachments/assets/e55f24f7-1e84-4951-8d5d-6cbe5006b978)
+![Portfolio Preview](https://github.com/Khelshankar-vyas/KhelShankar_Portfolio/blob/master/public/Images/Preview.png)
 
 
 A modern, responsive portfolio template built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion. Perfect for developers looking to showcase their work with style.
@@ -112,9 +112,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Vinod Jangid**
-- Portfolio: [www.vinodjangid.site](https://www.vinodjangid.site)
-- GitHub: [@vinodjangid07](https://github.com/vinodjangid07)
+**Khel Shankar Vyas**
+- Portfolio: [khelshankar.me](https://khelshankar.me)
+- GitHub: [@Khelshankar-vyas](https://github.com/Khelshankar-vyas/KhelShankar_Portfolio.git)
 
 ## ⭐ Support
 
