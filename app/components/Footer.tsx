@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
+
 const socialLinks = [
 	{
 		name: "GitHub",
@@ -51,10 +53,13 @@ export default function Footer() {
 					<div className="space-y-6">
 						<Link href="/" className="inline-block">
 							<span className="flex items-center gap-3">
-								<img
+								<Image
 									src="/Images/nav-avatar.png"
 									alt="KV Avatar"
+									width={40}
+									height={40}
 									className="w-10 h-10 rounded-full border-2 border-purple-600 shadow"
+									priority
 								/>
 								<span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-400 dark:to-indigo-400">
 									KV
@@ -86,7 +91,7 @@ export default function Footer() {
 							Quick Links
 						</h3>
 						<ul className="space-y-4">
-							{quickLinks.map((link) => (
+							{quickLinks.map((link: { name: string; href: string }) => (
 								<li key={link.name}>
 									<Link
 										href={link.href}

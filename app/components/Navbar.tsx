@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,14 +58,17 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="relative group flex items-center gap-3">
-              <img
+              <Image
                 src="/Images/nav-avatar.png"
                 alt="KV Avatar"
+                width={36}
+                height={36}
                 className="w-9 h-9 rounded-full border-2 border-purple-600 shadow"
+                priority
               />
               <motion.span
                 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-500"
-                whileHover={{ scale: 1.08, rotate: 3 }}
+                whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
                 KV
