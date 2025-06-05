@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Portfolio Template",
-  description: "Created by Vinodjangid.site",
+  description: "Created by Khel Shankar Vyas.site",
 };
 
 export default function RootLayout({
