@@ -83,7 +83,7 @@ const projects = [
 		],
 		demoUrl: "https://www.moinee.org/",
 		youtubeUrl: "https://youtu.be/zv2MAwTKEdU?si=6xoarT_7-ilPs9Pt",
-		githubUrl: "https://www.moinee.org/eVidya",
+		githubUrl: "https://github.com/Khelshankar-vyas/Moinee_Website.git",
 		color: "from-purple-500 to-pink-500",
 	},
 	{
@@ -103,7 +103,7 @@ const projects = [
 		],
 		demoUrl: "https://www.omserver.org/index_old.html",
 		youtubeUrl: "https://youtu.be/zdYFrUmH0oM?si=O2C6n7ni6mx7Th8n",
-		githubUrl: "https://www.omserver.org/new/",
+		githubUrl: "https://github.com/Khelshankar-vyas/Om-Server-Website.git",
 		color: "from-purple-500 to-pink-500",
 	},
 
