@@ -31,7 +31,7 @@ export default function About() {
               </div>
               {/* Resume Button with Link below the image */}
               <div className="mt-6 flex justify-center w-full">
-                <a href="/KHEL SHANKAR VYAS.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="KHEL SHANKAR VYAS.pdf" target="_blank" rel="noopener noreferrer">
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
