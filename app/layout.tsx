@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio Template",
+  title: "Khel Shankar Vyas Portfolio",
   description: "Created by Khel Shankar Vyas.site",
 };
 
