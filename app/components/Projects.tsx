@@ -117,6 +117,36 @@ const projects = [
 		githubUrl: "https://github.com/Khelshankar-vyas/KhelShankar_Portfolio.git",
 		color: "from-purple-500 to-pink-500",
 	},
+	{
+            title: "Ed-Tech App — Student Learning App",
+            description:
+                "Interactive e-learning application for students with lessons, quizzes and progress tracking. Built to provide offline-first learning and smooth UX across devices.",
+            image: "/Images/ed-tech-app.png",
+            tags: ["React Native", "React", "Node.js", "MySQL", "TailwindCSS"],
+            demoUrl: "https://github.com/rowxinventive/ed-tech-app",
+            githubUrl: "https://github.com/rowxinventive/ed-tech-app",
+            color: "from-green-500 to-emerald-500",
+        },
+        {
+            title: "edTech Dashboard — Admin Panel",
+            description:
+                "Admin dashboard and analytics panel for the Ed-Tech platform with user management, reports and visual charts to monitor engagement and performance.",
+            image: "/Images/edtech-dashboard.png",
+            tags: ["React", "Next.js", "Chart.js", "TailwindCSS", "Node.js"],
+            demoUrl: "https://github.com/rowxinventive/edTech-Dashboard",
+            githubUrl: "https://github.com/rowxinventive/edTech-Dashboard",
+            color: "from-blue-500 to-indigo-500",
+        },
+        {
+            title: "edTech Backend — API & Services",
+            description:
+                "RESTful backend powering the Ed-Tech platform: authentication, courses, quizzes, and analytics services implemented with Node.js and MySQL.",
+            image: "/Images/edtech-backend.png",
+            tags: ["Node.js", "Express", "MySQL", "REST", "Docker"],
+            demoUrl: "https://github.com/rowxinventive/edtechbackend",
+            githubUrl: "https://github.com/rowxinventive/edtechbackend",
+            color: "from-orange-500 to-rose-500",
+        },
 ];
 
 export default function Projects() {
