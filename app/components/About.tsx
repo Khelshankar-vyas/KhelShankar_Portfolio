@@ -4,6 +4,39 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function About() {
+  const partners = [
+    { name: "Vodafone", logo: "/Images/partners/02.png" },
+    { name: "Tata Motors", logo: "/Images/partners/01.png" },
+    { name: "WNS", logo: "/Images/partners/07.png" },
+    { name: "WGFP & PANIIT", logo: "/Images/partners/13.png" },
+    { name: "Shree Cement", logo: "/Images/partners/03.png" },
+    { name: "HDFC", logo: "/Images/partners/04.png" },
+    { name: "Aditya Birla", logo: "/Images/partners/05.png" },
+    { name: "Vedanta", logo: "/Images/partners/06.png" },
+    { name: "HG Infra", logo: "/Images/partners/08.png" },
+    { name: "Central Square", logo: "/Images/partners/09.png" },
+    { name: "Agrasen", logo: "/Images/partners/10.png" },
+    { name: "KPMG", logo: "/Images/partners/11.png" },
+    { name: "ASDC", logo: "/Images/partners/12.png" },
+    { name: "Rotary Club", logo: "/Images/partners/14.png" },
+    { name: "Education Ministry", logo: "/Images/partners/15.png" },
+    { name: "TISS", logo: "/Images/partners/16.png" },
+    { name: "Partner 17", logo: "/Images/partners/17.png" },
+    { name: "Uttarakhand Govt", logo: "/Images/partners/18.png" },
+    { name: "Kota District", logo: "/Images/partners/19.png" },
+    { name: "Round Table India", logo: "/Images/partners/20.png" },
+    { name: "Dantewada", logo: "/Images/partners/21.png" },
+    { name: "HG Foundation", logo: "/Images/partners/22.png" },
+    { name: "Case Project-Puliya Kalan", logo: "/Images/partners/23.png" },
+    { name: "Rajasthan State Mines & Minerals", logo: "/Images/partners/24.png" },
+    { name: "NTPC", logo: "/Images/partners/25.png" },
+    { name: "Kamal Cogent Energy", logo: "/Images/partners/26.png" },
+    { name: "Kali Sindh", logo: "/Images/partners/27.png" },
+    { name: "Ocean Network Express", logo: "/Images/partners/28.png" },
+    { name: "Rural Development & Panchayati Raj Government", logo: "/Images/partners/29.png" },
+    { name: "Chhabra Group", logo: "/Images/partners/30.png" },
+  ];
+
   return (
     <section id="about" className="relative py-20 bg-white dark:bg-black">
       <div className="absolute bottom-0 right-0 w-full h-96 bg-gradient-to-t from-purple-100/20 dark:from-purple-900/20 via-transparent to-transparent" />
@@ -95,7 +128,7 @@ export default function About() {
 
             <div className="space-y-6 text-gray-600 dark:text-gray-300">
               <p>
-                Hey! I&apos;m Khel Shankar Vyas, a 23-year-old Developer currently advancing my knowledge with an MCA from Manipal University. My professional journey is centered at OM Server Pvt. Ltd., where I&apos;ve grown from a Tech Intern (2021-2022) to a Developer (July 2023-Current). I&apos;m passionate about building robust and user-friendly web experiences.
+                Hey! I&apos;m Khel Shankar Vyas, a 24-year-old Developer currently advancing my knowledge with an MCA from Manipal University. My professional journey is centered at OM Server Pvt. Ltd., where I&apos;ve grown from a Tech Intern (2021-2022) to a Developer (July 2023-Current). I&apos;m passionate about building robust and user-friendly web experiences.
               </p>
               
               <p>
@@ -133,6 +166,77 @@ export default function About() {
             </div>
           </motion.div>
         </div>
+
+        {/* Company Partners & Associations Section */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-20 pt-20 border-t border-gray-200 dark:border-gray-800"
+        >
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Company Partnerships & Associations
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              As an employee of OM Server Pvt. Ltd. & Moinee Foundation, I have delivered comprehensive support and solutions on behalf of our esteemed partners and collaborators. These partnerships enable us to create impactful educational technology solutions across India.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 mt-6">
+              <a href="https://www.omserver.org" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 font-medium">
+                OM Server →
+              </a>
+              <a href="https://www.moinee.org" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-700 dark:text-purple-400 dark:hover:text-purple-300 font-medium">
+                Moinee Foundation →
+              </a>
+            </div>
+          </div>
+
+          {/* Partners Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {partners.map((partner, index) => (
+              <motion.div 
+                key={partner.name}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.03 }}
+                whileHover={{ y: -8, scale: 1.05 }}
+                className="p-4 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 
+                rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm hover:shadow-lg 
+                transition-all duration-300 flex flex-col items-center justify-center text-center group h-40"
+              >
+                <div className="relative w-full h-24 flex items-center justify-center mb-2">
+                  <Image
+                    src={partner.logo}
+                    alt={partner.name}
+                    width={100}
+                    height={80}
+                    className="object-contain max-w-full max-h-full group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <p className="text-xs font-medium text-gray-700 dark:text-gray-300 line-clamp-2">
+                  {partner.name}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Description */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="mt-12 p-6 bg-purple-50 dark:bg-purple-900/20 rounded-xl border border-purple-200 dark:border-purple-800"
+          >
+            <p className="text-gray-700 dark:text-gray-300">
+              Through my work with these 30+ esteemed organizations, I have contributed to bridging the digital divide in education, 
+              implementing scalable solutions, and providing comprehensive support to educational institutions and corporate partners across India. 
+              My involvement with these partnerships reflects my commitment to creating meaningful impact through technology, innovation, and collaborative problem-solving.
+            </p>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );

@@ -147,6 +147,32 @@ const projects = [
             githubUrl: "https://github.com/rowxinventive/edtechbackend",
             color: "from-orange-500 to-rose-500",
         },
+		{
+            title: "Story Promptoo",
+            description:
+                "Story Promptoo is an story making through prompts=based cards game that sparks creativity and imagination. Players draw random prompt cards to collaboratively create unique stories, enhancing their storytelling skills in a fun and engaging way.",
+            image: "/Images/Promptoo.jpeg",
+            tags: ["HTML",
+			"JavaScript",
+			"CSS",
+			"Jquery",
+			"SQL",
+			"Php",],
+            demoUrl: "https://github.com/Khelshankar-vyas/Story-Promptoo",
+            githubUrl: "https://github.com/Khelshankar-vyas/Story-Promptoo",
+            color: "from-orange-500 to-rose-500",
+        },
+		{
+        title: "Ink & Inspire – Interactive Learning Platform",
+        description:
+            "AI Storybook Creator is an interactive tool that transforms simple transcripts into fully illustrated childrens storybooks using Gemini AI. Users can input text, and the AI generates engaging narratives complete with vibrant illustrations, fostering creativity and literacy in young readers.",
+		image: "/Images/Ink & Inspire_Moinee Foundation Logo.png",
+        tags: ["HTML", "JavaScript", "TailwindCSS", "React", "Node.js", "MySQL", "REST API"],
+        demoUrl: "https://omserver.org/ini/",
+        
+        color: "from-blue-500 to-cyan-500",
+    },
+
 ];
 
 export default function Projects() {
